@@ -3056,14 +3056,16 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
+  /* 專案修改 */
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #a7856a;
+  border-color: #a7856a;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  /* 專案修改 */
+  background-color: #8e715a;
+  border-color: #866a55;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
