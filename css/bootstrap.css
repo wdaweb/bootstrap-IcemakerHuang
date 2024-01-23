@@ -7266,6 +7266,20 @@ fieldset:disabled .btn {
 .vh-100 {
   height: 100vh !important;
 }
+/* 專案修改 */
+.vh-50 {
+  height: 50vh !important;
+}
+.vh-60 {
+  height: 60vh !important;
+}
+.vh-70 {
+  height: 70vh !important;
+}
+.vh-80 {
+  height: 80vh !important;
+}
+/* 專案修改_end */
 
 .min-vh-100 {
   min-height: 100vh !important;
