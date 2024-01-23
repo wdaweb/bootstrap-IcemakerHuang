@@ -11,3 +11,6 @@
 4. 套件: gsap.to() - ScrollTrigger
    - 使用區域：BILURY HOTEL VIDEO
    - 網址：https://gsap.com/docs/v3/GSAP/gsap.to()/
+4. 套件: gsap.fromTo() - navbar
+   - 使用區域：banner / navbar
+   - 網址：https://gsap.com/docs/v3/GSAP/gsap.fromTo()/

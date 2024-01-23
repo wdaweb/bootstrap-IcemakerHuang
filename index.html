@@ -50,6 +50,9 @@
             #banner .carousel-item img {
                 height: 100%;
             }
+            .dropdown-menu{
+                color: #f4f0ec;
+            }
         }
 
         @media(min-width:992px) {
@@ -176,7 +179,7 @@
     <!-- banner -->
     <div id="banner" class="">
         <!-- 導覽列 -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="https://bilury.bithemer.com/assets/img/logos/logo-light.png"></a>
                 <!--data-bs-toggle="offcanvas" 觸發側邊欄功能，data-bs-target="#navbarMain" 觸發的目標-->
@@ -184,7 +187,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- 選單 -->
-                <div class="offcanvas offcanvas-start bg-dark" id="navbarMain">
+                <div class="offcanvas offcanvas-start " id="navbarMain">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title text-white ls-2">Menu</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
@@ -620,7 +623,7 @@
         })
 
 
-        // ScrollTrigger
+        // ScrollTrigger 滾動視差
         gsap.registerPlugin(ScrollTrigger);
         $('#section-6').each(function (index, section) {
             $('#section-6').css({
@@ -638,6 +641,29 @@
                     ease: 'none'
                 })
         })
+        // navbar 顏色變化
+        gsap.fromTo('.navbar', 
+            { backgroundColor: 'transparent' }, // 開始狀態
+            { // 目標狀態和 ScrollTrigger 配置
+                backgroundColor: '#343a40', // 'bg-dark' 的背景色
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: '.banner',
+                    start: 'top top', 
+                    end: 'bottom top',
+                    scrub: true,
+                    markers: true,
+                    onEnter() {
+                        $('.navbar').addClass('bg-dark')
+                    },
+                    onLeaveBack() {
+                        $('.navbar').removeClass('bg-dark')
+                    },
+                },
+            duration: 5,
+            ease: 'power1.inOut'
+            }
+        );
     </script>
 
 </body>
