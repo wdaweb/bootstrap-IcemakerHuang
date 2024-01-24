@@ -62,6 +62,10 @@
             #banner {
                 height: 100vh;
             }
+            #navbarMain{
+                --bs-bg-opacity: 0;
+                background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+            }
         }
         
         /* 輪播 */
@@ -190,7 +194,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- 選單 -->
-                <div class="offcanvas offcanvas-start " id="navbarMain">
+                <div class="offcanvas offcanvas-start  bg-dark" id="navbarMain">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title text-white ls-2">Menu</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
