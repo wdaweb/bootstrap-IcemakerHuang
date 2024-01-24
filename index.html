@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         /* all */
+        body{
+            height: 100%;
+        }
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
         h1,h2,h3,h4,h5,h6,p,button{
             font-family: 'Cinzel', serif;
@@ -587,7 +590,7 @@
                 <hr>
             </div>
         </div>
-        <div class="col-12 text-center text-white">
+        <div class="col-12 text-center text-white  align-items-center justify-content-center d-flex">
             <p>© 2023 Bilury Hotel. All rights reserved.</p>
         </div>
     </div>
@@ -652,7 +655,7 @@
                     start: 'top top', 
                     end: 'bottom top',
                     scrub: true,
-                    markers: true,
+                    // markers: true,
                     onEnter() {
                         $('.navbar').addClass('bg-dark')
                     },
